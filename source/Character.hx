@@ -124,19 +124,19 @@ class Character extends FlxSprite
 
 			case 'dad':
 				// DAD ANIMATION LOADING CODE
-				tex = Paths.getSparrowAtlas('characters/DADDY_DEAREST', 'shared');
+				tex = Paths.getSparrowAtlas('characters/DeathSans002', 'shared');
 				frames = tex;
-				animation.addByPrefix('idle', 'Dad idle dance', 24);
-				animation.addByPrefix('singUP', 'Dad Sing Note UP', 24);
-				animation.addByPrefix('singRIGHT', 'Dad Sing Note RIGHT', 24);
-				animation.addByPrefix('singDOWN', 'Dad Sing Note DOWN', 24);
-				animation.addByPrefix('singLEFT', 'Dad Sing Note LEFT', 24);
+				animation.addByPrefix('idle', 'Nightmare Sans instance', 24);
+				animation.addByPrefix('singUP', 'Up instance', 24);
+				animation.addByPrefix('singRIGHT', 'Right instance', 24);
+				animation.addByPrefix('singDOWN', 'Down instance', 24);
+				animation.addByPrefix('singLEFT', 'Left instance', 24);
 
-				addOffset('idle');
-				addOffset("singUP", -6, 50);
-				addOffset("singRIGHT", 0, 27);
+				addOffset('idle', -5, -10);
+				addOffset("singUP", -46, 27);
+				addOffset("singRIGHT", 42, -117);
 				addOffset("singLEFT", -10, 10);
-				addOffset("singDOWN", 0, -30);
+				addOffset("singDOWN", 20, -41);
 
 				playAnim('idle');
 			case 'spooky':
